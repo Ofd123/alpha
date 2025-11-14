@@ -5,8 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.Toast;
 
-public class ChargerReceiver extends BroadcastReceiver {
-
+public class ChargerReceiver extends BroadcastReceiver
+{
     @Override
     public void onReceive(Context context, Intent intent)
     {
@@ -15,10 +15,5 @@ public class ChargerReceiver extends BroadcastReceiver {
             Toast.makeText(context, "Charger connected", Toast.LENGTH_SHORT).show();
         else if(Intent.ACTION_POWER_DISCONNECTED.equals(action))
             Toast.makeText(context, "Charger Disconnected", Toast.LENGTH_SHORT).show();
-        // TODO: This method is called when the BroadcastReceiver is receiving
-        // an Intent broadcast.
-        //throw new UnsupportedOperationException("Not yet implemented");
-
     }
-
 }

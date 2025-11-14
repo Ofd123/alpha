@@ -56,25 +56,13 @@
             android:layout_weight="1" />
 
         <Button
-            android:id="@+id/chargingbtn"
+            android:id="@+id/activateBRbtn"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="toggleChargingToast"
-            android:text="toggle charging toast" />
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/broadcastbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:onClick="toggleBroadcastListening"
-            android:text="toggle broadcast Listening" />
+            android:backgroundTint="#4CAF50"
+            android:onClick="ActivateBtn"
+            android:text="activate charging broadcast" />
 
         <Space
             android:layout_width="wrap_content"
@@ -99,17 +87,18 @@
             android:layout_weight="1" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/DeactivateBRbtn"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="back"
-            android:text="back" />
+            android:backgroundTint="#F44336"
+            android:onClick="DeactivateBtn"
+            android:text="deactivate charging broadcast" />
 
         <Space
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="4" />
+            android:layout_weight="1" />
     </LinearLayout>
 
     <Space
